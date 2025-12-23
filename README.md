@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Making Large Language Models Efficient Dense Retrievers </h1>
+  <h2>Making Large Language Models Efficient Dense Retrievers </h2>
 </div>
 
 **EffiR** is a framework for building efficient LLM-based **dense retrievers** through large-scale MLP compression with a coarse-to-fine strategy:
