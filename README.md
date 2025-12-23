@@ -7,7 +7,7 @@
 - **Analyzes layer redundancy** in LLM-based dense retrievers, showing that **MLP layers are substantially more prunable** than attention layers for retrieval.
 - **Compresses LLMs with a two-stage strategy**, followed by retrieval-specific fine-tuning:
   1) **Coarse-grained depth reduction** (dropping redundant MLP layers)  
-  2) **Fine-grained width reduction** (slimming MLP hidden dimensions)
+  2) **Fine-grained width reduction** (slimming MLP intermediate dimensions)
  
 EffiR achieves substantial reductions in **model size** and **inference latency** while largely preserving effectiveness of full-size retrievers.
  
