@@ -12,11 +12,30 @@
 EffiR achieves substantial reductions in **model size** and **inference latency** while largely preserving effectiveness of full-size retrievers.
  
 ---
+## Models
 
+Models on Hugging Face:
+
+- [EffiR-Mistral-Drop-8-MLP](https://huggingface.co/yibinlei/effir-mistral-drop-8-mlp)
+- [EffiR-Mistral-Drop-16-MLP](https://huggingface.co/yibinlei/effir-mistral-drop-16-mlp)
+- [EffiR-Mistral-Drop-8-Attn](https://huggingface.co/yibinlei/effir-mistral-drop-8-attn)
+- [EffiR-Mistral-Drop-16-Attn](https://huggingface.co/yibinlei/effir-mistral-drop-16-attn)
+
+## Evaluation
+
+```bash
+MODEL_NAME_OR_PATH=/path/to/mistral-base \
+LORA_DIR=path/effir-mistral-drop-8-mlp \
+TASK=NFCorpus \
+BATCH_SIZE=32 \
+bash scripts/eval_mteb.sh
+```
+
+---
 ## 📑 Release Plan
 
-- [ ] Model checkpoints
+- Model checkpoints
 - [ ] Training code
-- [ ] Evaluation code
+- Evaluation code
 
 ---
